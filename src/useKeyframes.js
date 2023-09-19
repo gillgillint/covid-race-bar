@@ -97,9 +97,9 @@ function useKeyframes(dataUrl, numOfSlice) {
       const { data: csvString } = resp;
       const nextData = csvParse(csvString)
         .slice(1)
-        .map(([date, name, category, value]) => ({
-          date,
+        .map(([name,category,date,value]) => ({
           name,
+          date,
           category,
           value: Number(value)
         }));

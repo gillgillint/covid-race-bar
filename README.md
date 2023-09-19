@@ -29,4 +29,4 @@ serve -s build # running built app on port 5000.
 
 ## Future
 
-Maybe extract the core chart racing code as npm package if I have time.
+Maybe extract the core chart racing code as npm package if I have time.# covid-race-bar

@@ -121,7 +121,9 @@ const RacingBarChart = React.forwardRef(({
         .range(schemeTableau10),
     [nameList]
   );
-  const dateInYear = currentDate.getFullYear();
+  const year = currentDate.getFullYear();
+  const date = currentDate.getDate();
+  const month = currentDate.getMonth()
   return (
     <svg width={width} height={height}>
       <Group top={margin.top} left={margin.left} key={animationKey}>
@@ -138,7 +140,7 @@ const RacingBarChart = React.forwardRef(({
           x={xMax}
           y={yMax}
         >
-          {dateInYear}
+          {`${date}/${month + 1}/${year}`}
         </text>
         <line
           x1={0}
